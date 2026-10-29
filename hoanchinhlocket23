@@ -1,0 +1,34 @@
+#!name=Locket Vip By NgocGia
+#!desc=Được tổng hợp bởi Nguyen Ngoc Gia
+#!author=ngnggia23
+#!homepage=https://dinhduyvinh.loc.cc/
+#!tgchannel=https://t.me/tienich
+#!configUrl=https://cdn.jsdelivr.net/gh/dinhduyvinh09/AppPre@refs/heads/main/All_In_One.conf
+#!icon=https://dinhduyvinh.loc.cc/assets/img/shadowrocket.webp
+#!howtouse=Shadowrocket
+#Shadowrocket Configuration - Locket Vip
+
+[General]
+bypass-system = true
+skip-proxy = *.local, *.crashlytics.com
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+
+[Rule]
+AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com),(PROTOCOL,UDP)),REJECT
+
+[Header Rewrite]
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
+^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
+http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/user-customization-service\/v1\/customize$ header-del if-none-match
+
+#LocketGold
+#hostname = api.revenuecat.com, firebaseremoteconfig.googleapis.com
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path= https://raw.githubusercontent.com/ngocgia2337-star/Locket/refs/heads/main/onenggia23, requires-body=true, max-size=-1, timeout=60
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path= https://raw.githubusercontent.com/ngocgia2337-star/Locket/refs/heads/main/twongnggia23, timeout=60
+locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path= https://raw.githubusercontent.com/ngocgia2337-star/Locket/refs/heads/main/threenggia23, requires-body=true, max-size=-1, timeout=60
+#************************************#
+
+[MITM]
+hostname = %APPEND%, *.googlevideo.com, youtubei.googleapis.com, www.youtube.com, s.youtube.com, -redirector*.googlevideo.com, premium*.truecaller.com, sub.store, api.revenuecat.com, firebaseremoteconfig.googleapis.com, api.rc-backup.com, buy.itunes.apple.com, spclient.wg.spotify.com, *spclient.spotify.com, api-mobile.soundcloud.com, api.picsart.com, us-central1-alight-creative.cloudfunctions.net, api-sub.meitu.com, photos.adobe.io, , ap*.intsig.net, api-account.kinemasters.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, user-snow-api.snow.me, h5.xiuxiu.meitu.com, api.xiuxiu.meitu.com, gs-loc.apple.com, gs-loc-cn.apple.com, bluedot.is.autonavi.com, bluedot.is.autonavi.com.gds.alibabadns.com
+
