@@ -1,0 +1,75 @@
+// ============================================================
+// Locket Remote Config Rewrite
+// Tác giả: ngnggia23
+// ============================================================
+(function () {
+var _0x4a12 = [
+'always_enabled',
+'app_icon_picker',
+'camera_roll',
+'camera_theme',
+'locket_views',
+'long_captions',
+'longer_video',
+'unlimited_friends',
+'priority_support',
+'profile_badge',
+'remove_ads',
+'video',
+'custom_widget_frames',
+'streak_recovery',
+'LOCKET GOLD ALL FEATURES',
+'gold_gradient',
+'Gia Đã Phù Phép 🪄💛',
+'Nhớ follow kênh tiktok @ngnggia23 🐸',
+'Cảm ơn mọi người đã tin tưởng 💛',
+'https://i.ibb.co/1Ytj1Dzzy/Shin-chan-1.png',
+'Xong rồi nhé!',
+'gold_promo_v3',
+'2020-01-01T00:00:00',
+'2099-12-31T23:59:59',
+'true',
+'https://www.tiktok.com/@ngnggia23'
+];
+function _0x2b89(_0x1a8f) {
+return _0x4a12[_0x1a8f];
+}
+let obj = JSON.parse($response.body);
+if (obj && obj.data) {
+obj.data.feature_gates = JSON.stringify({
+'app_icon_picker': _0x2b89(0),
+'camera_roll': _0x2b89(0),
+'camera_theme': _0x2b89(0),
+'locket_views': _0x2b89(0),
+'long_captions': _0x2b89(0),
+'longer_video': _0x2b89(0),
+'unlimited_friends': _0x2b89(0),
+'priority_support': _0x2b89(0),
+'profile_badge': _0x2b89(0),
+'remove_ads': _0x2b89(0),
+'video': _0x2b89(0),
+'custom_widget_frames': _0x2b89(0),
+'streak_recovery': _0x2b89(0)
+});
+obj.data.feature_discovery_popup_config = JSON.stringify({
+'tag': _0x2b89(14),
+'tag_gradient': true,
+'tag_style': _0x2b89(15),
+'title': _0x2b89(16),
+'feature_set': [{
+'title': _0x2b89(17),
+'body': _0x2b89(18),
+'imageURL': _0x2b89(19)
+}],
+'primary_button_title': _0x2b89(20),
+'campaign': _0x2b89(21),
+'start_at': _0x2b89(22),
+'end_at': _0x2b89(23),
+'use_local_time_zone': true
+});
+obj.data.android_subscribe_gold_button_enabled = _0x2b89(0);
+obj.data.profile_badge_visible = _0x2b89(24);
+obj.data.settings_tiktok_url = _0x2b89(25);
+}
+$done({ body: JSON.stringify(obj) });
+})();
