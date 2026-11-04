@@ -28,7 +28,7 @@
                 <key>DNSProtocol</key>
                 <string>HTTPS</string>
                 <key>ServerURL</key>
-                <string>https://doh.2303207.xyz/dns-query/common</string>
+                <string>https://doh.2707226.xyz/dns-query/common</string>
                 <key>ServerAddresses</key>
                 <array>
                     <string>103.211.207.247</string>
