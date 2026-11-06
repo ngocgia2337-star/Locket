@@ -1,0 +1,57 @@
+// ========= ID ========= //
+// Locket: Gold + Filter Pack
+// @ngnggia23
+// ====================== //
+
+// --- CẤU HÌNH NGÀY THÁNG TẠI ĐÂY --- //
+var START_DATE = "2007-03-23T10:10:14Z"; // Ngày bắt đầu đã được đổi về 23/03/2007
+var EXPIRE_DATE = "9999-01-09T10:10:14Z"; // Ngày hết hạn
+
+var ua = $request.headers["user-agent"] || $request.headers["User-Agent"];
+var obj = JSON.parse($response.body);
+
+// Cấu trúc gói Gold Locket chuẩn
+var entitlementObj = {
+    "grace_period_expires_date": null,
+    "purchase_date": START_DATE,
+    "original_purchase_date": START_DATE,
+    "product_identifier": "locket_160",
+    "expires_date": EXPIRE_DATE,
+    "ownership_type": "PURCHASED",
+    "store": "app_store"
+};
+
+var subscriptionObj = {
+    "auto_resume_date": null,
+    "is_sandbox": false,
+    "ownership_type": "PURCHASED",
+    "billing_issues_detected_at": null,
+    "management_url": "https://apps.apple.com/account",
+    "period_type": "normal",
+    "price": {
+        "amount": 0,
+        "currency": "VND"
+    },
+    "expires_date": EXPIRE_DATE,
+    "grace_period_expires_date": null,
+    "refunded_at": null,
+    "unsubscribe_detected_at": null,
+    "original_purchase_date": START_DATE,
+    "purchase_date": START_DATE,
+    "store": "app_store",
+    "store_transaction_id": "2000001108"
+};
+
+// Gán dữ liệu vào phản hồi JSON
+obj.entitlements = obj.entitlements || {};
+obj.entitlements["locket_160"] = entitlementObj;
+
+if (obj.subscriber) {
+    obj.subscriber.entitlements = obj.subscriber.entitlements || {};
+    obj.subscriber.entitlements["locket_160"] = entitlementObj;
+    
+    obj.subscriber.subscriptions = obj.subscriber.subscriptions || {};
+    obj.subscriber.subscriptions["locket_160"] = subscriptionObj;
+}
+
+$done({ body: JSON.stringify(obj) });
