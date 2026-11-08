@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>PayloadType</key>
+ <string>Configuration</string>
+ <key>PayloadVersion</key>
+ <integer>1</integer>
+ <key>PayloadIdentifier</key>
+ <string>com.selfhosted.doh.C57E068E-AEA5-4085-BCB3-3716F4D835ED</string>
+ <key>PayloadUUID</key>
+ <string>6BBA9084-7336-4D2B-8673-ABC7DCCB1B7D</string>
+ <key>PayloadDisplayName</key>
+ <string>LocketGold ❤️</string>
+ <key>PayloadDescription</key>
+ <string>Người dùng: nzaaa233
+Hạn sử dụng: 23/03/2033 (03:18)
+Hồ sơ DNS cấu hình kích hoạt bản quyền Locket Gold.</string>
+ <key>PayloadOrganization</key>
+ <string>LocketGold • HSD: 23/03/2033</string>
+ <key>PayloadRemovalDisallowed</key>
+ <false/>
+ <key>PayloadContent</key>
+ <array>
+  <dict>
+   <key>PayloadType</key>
+   <string>com.apple.security.root</string>
+   <key>PayloadVersion</key>
+   <integer>1</integer>
+   <key>PayloadIdentifier</key>
+   <string>com.apple.security.root.6DDC034B-89D7-4920-BFD1-748E0DB4DCD4</string>
+   <key>PayloadUUID</key>
+   <string>AB6CC70A-2088-45AD-BE20-E5BC7E080145</string>
+   <key>PayloadDisplayName</key>
+   <string>LocketGold ❤️ Root CA</string>
+   <key>PayloadDescription</key>
+   <string>Root certificate for dns.follow1s.net</string>
+   <key>PayloadCertificateFileName</key>
+   <string>LocketGold ❤️.cer</string>
+   <key>PayloadContent</key>
+   <data>
+MIIDZDCCAkygAwIBAgIQAXudrCDm2pkWIKpDKgrpyDANBgkqhki
+G9w0BAQsFADBMMRMwEQYDVQQDEwpMb2NrRHb2xkMRMwEQYD
+VQQKEwPMb2NrRHb2xkMRMEQYDVQQLEwpMb2NhcBSb290MQ
+swCQYDVQQGEwJWTJAeFw0yNjExMDExNjQzNDdaFw0zNjEwMj
+NDDaMEWxEzARBgNVBAMTCkxvy2TledvbGQxEzARBgNVBAoTCkxvy2
+ldEdvbGQxEzARBgNVBASTCkxvy2FSFljvb3QXCzAJBgNVBAYTAIZOMIIBI
+jANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3yBr1A6uhX2kQTko
+9ZQnPIauKKITZFV0//pQULqhRg6AIrbT3RAV2DV2LPu/
+p1bmirdsIP0Q8KSSqwWYntSoOYyME+4NnHZHVQdoZp3ngvSRAvyrvBU
+OBLV6YSfoKxWu7kuohQULaO626CR07C4CgyHjtDSw9k/
+om5fkuvKXlx6//
+WWEh+FsnxBwyT7P9JVBaLHzzPDPgLQ1Dl1GMhISzXjSP5cPHIdy73J4Je
+bMPIVjXtvZnZluGiXXtgH8VooLTq4wOM5JiliRbe+3r6KLo3Vk9cSGBU2AP
+ajob/8lekhMXy9X7/2sMe64phEBFXHzW+9akz/
+ornToynIlVyC9VwIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/
+MA4GA1UdDwEB/
+wQEAwIBhjAdBgNVHQ4EFgQUSqgCnwfstaQJwMhIW+ivGzDGnmAwDQ
+YJKoZIhvcNAQELBQADgGEBACrZbiBTXLJSgYJxkTW09Z8ZXwqo8sFyq
+GQiuXjdhfMdNufXc9HolGv2ymmdRCP6kuu3ulzEteSZrQRGiWDHIUT7gb
+6m2ahAa0+
+   </data>
+  </dict>
+ </array>
+</dict>
+</plist>
